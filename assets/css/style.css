@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
-	overflow: hidden
   font-family: "Roboto", sans-serif;
+}
+
+#index-body {
+	overflow-y: hidden;
 }
 
 header, main {
@@ -13,6 +14,18 @@ header, main {
 
 .get-in-touch{
 	font-weight: 500;
+}
+
+section{
+	padding-bottom: 40px;
+}
+
+.carousel-title {
+    text-align: center;
+}
+
+.carousel-title h1 {
+	font-weight: bold;
 }
 
 .container {
@@ -72,54 +85,69 @@ header, main {
 }
 
 .container .card:hover .content .contentBx h3 {
-opacity: 1;
-transform: translateY(0px);
+	opacity: 1;
+	transform: translateY(0px);
 }
 
 .container .card .content .contentBx h3 span {
-font-size: 12px;
-font-weight: 300;
-text-transform: initial;
+	font-size: 12px;
+	font-weight: 300;
+	text-transform: initial;
+}
+
+.container .card .imgBs {
+	width: 318px;
+	height: 322px;
+}
+
+.container .card h2 {
+	font-weight: bold;
 }
 
 .container .card .content .sci {
-position: relative;
-bottom: 10px;
-display: flex;
+	position: relative;
+	bottom: 10px;
+	display: flex;
 }
 
 .container .card .content .sci li {
-list-style: none;
-margin: 0 10px;
-transform: translateY(40px);
-transition: 0.5s;
-opacity: 0;
-transition-delay: calc(0.2s * var(--i));
+	list-style: none;
+	margin: 0 10px;
+	transform: translateY(40px);
+	transition: 0.5s;
+	opacity: 0;
+	transition-delay: calc(0.2s * var(--i));
 }
 
 .container .card:hover .content .sci li {
-transform: translateY(0px);
-opacity: 1;
+	transform: translateY(0px);
+	opacity: 1;
 }
 
 .container .card .content .sci li a {
-color: #fff;
-font-size: 24px;
+	color: #fff;
+	font-size: 24px;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
 }
 
 .footer-basic {
-padding:40px 0 0 0;
-background-color:#ffffff;
-color:#4b4c4d;
+	padding:40px 0 0 0;
+	background-color:#ffffff;
+	color:#4b4c4d;
 }
   
 .footer-basic ul {
-padding:0;
-list-style:none;
-text-align:center;
-font-size:18px;
-line-height:1.6;
-margin-bottom:0;
+	padding:0;
+	list-style:none;
+	text-align:center;
+	font-size:18px;
+	line-height:1.6;
+	margin-bottom:0;
 }
   
 .footer-basic li {
